@@ -1,29 +1,40 @@
-import Slider from "@/app/slider/slider";
+import Slider from "@/app/slider/Slider";
 
 const slides = [
     {
         id: 1,
-        icon: './vercel.svg',
-        title: 'Главная',
-        description: 'Описание главного раздела',
+        icon: './icons/first.svg',
+        title: 'Анализ текущего состояния карьеры',
+        description: 'Проведем оценку вашего кейса и создадим стратегию для дальнейшего карьерного развития.',
     },
     {
         id: 2,
-        icon: './vercel.svg',
-        title: 'Профиль',
-        description: 'Управляйте своим профилем здесь.',
+        icon: './icons/second.svg',
+        title: 'Сопроводительные письма и резюме ',
+        description: 'Поможем сформировать профессиональный портфель, которые выделит вас среди других кандидатов.',
     },
     {
         id: 3,
-        icon: './vercel.svg',
-        title: 'Настройки',
-        description: 'Настройте параметры приложения.',
+        icon: './icons/third.svg',
+        title: 'Поиск работы',
+        description: 'Определим вашу карьерную цель и разработаем стратегию для трудоустройства.',
     },
     {
         id: 4,
-        icon:'./vercel.svg',
-        title: 'Поиск',
-        description: 'Найдите нужную информацию.',
+        icon:'./icons/fourth.svg',
+        title: 'Тренинг по презентации личного бренда',
+        description: 'Подсветим сильные стороны и грамотно выстроим самопрезентацию.',
+    },
+    {
+        id: 5,
+        icon:'./icons/fifth.svg',
+        title: 'Подготовка к собеседованию',
+        description: 'Научим говорить о себе кратко, ярко и профессионально.',
+    },{
+        id: 6,
+        icon:'./icons/sixth.svg',
+        title: 'Рекомендация по базе STEMPS Career',
+        description: 'Поможем встретиться соискателю и работодателю. ',
     },
 ];
 
@@ -31,8 +42,8 @@ const slides = [
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Slider slides={slides}></Slider>
-    </div>
+      <div className="flex justify-center items-center h-screen">
+          <Slider slides={slides} />
+      </div>
   );
 }

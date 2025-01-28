@@ -14,7 +14,9 @@
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.1"
+    "react-swipeable": "^7.0.2",
+    "swiper": "^11.2.1",
+    "vercel": "^39.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
